@@ -1,0 +1,68 @@
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+
+  #forgot-password a {
+    color: #2095f3;
+  }
+
+  #signup-prompt a {
+    color: #8a0714;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* For desktop: */
+  .login-signup-header {
+    background-color: #e8f5ff;
+    padding: 10px;
+  }
+
+  #login,
+  #signup {
+    margin: auto;
+    width: 70%;
+  }
+
+  input[type="email"],
+  input[type="password"],
+  input[type="submit"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  input[type="submit"] {
+    width: 50%;
+  }
+
+  .form-header {
+    font-size: x-large;
+    font-weight: bold;
+    padding: 12px 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .form-option {
+    font-size: small;
+    padding: 0px;
+    width: 100%;
+    margin: auto;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #forgot-password a {
+    color: #2095f3;
+  }
+
+  #signup-prompt a {
+    color: #8a0714;
+  }
+}
