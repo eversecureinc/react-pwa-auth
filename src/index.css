@@ -7,6 +7,37 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+input::-ms-clear, input::-ms-reveal {
+  display: none;
+}
+
+*::-webkit-scrollbar {
+	width: 8px;
+	background-color: transparent;
+}
+
+*::-webkit-scrollbar:horizontal {
+	height: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background: #ffffff20;
+  min-height: 30px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: #6B76A180;
+}
+
+*::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
