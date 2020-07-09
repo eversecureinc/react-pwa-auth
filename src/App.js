@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useEffect, useState, useCallback } from "react";
 import { Switch, Route } from "react-router-dom";
 import styled from "styled-components";
+import { AppContext } from 'contexts';
 
 import Login from "./component/login";
 import Signup from "./component/signup";
@@ -13,8 +14,14 @@ const DivTitle = styled.div`
 `;
 
 function App() {
+  const [metaInfo, setMetaInfo] = useState('');
   return (
     <div className="App">
+      <AppContext.Provider
+        value={{
+          metaInfo,
+          setMetaInfo
+        }}></AppContext.Provider>
       <DivTitle><h1>Login / Sign Up</h1></DivTitle>
       <Switch>
         <Route exact path="/signup">
@@ -29,7 +36,8 @@ function App() {
           <Login />
         </Route>
       </Switch>
-    </div>
+      </AppContext.Provider>
+    </div >
   );
 }
 
